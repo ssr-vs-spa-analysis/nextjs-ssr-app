@@ -2,6 +2,9 @@
   "name": "next-ssr-app",
   "private": true,
   "version": "0.0.0",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,6 +13,7 @@
     "typecheck": "tsc --noEmit",
     "format": "prettier \"src/**/*.{ts,tsx,css}\" \"*.{js,json,ts,mjs,cjs}\" --write",
     "format:check": "prettier \"src/**/*.{ts,tsx,css}\" \"*.{js,json,ts,mjs,cjs}\" --check",
+    "postinstall": "prisma generate",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "db:push": "prisma db push",
