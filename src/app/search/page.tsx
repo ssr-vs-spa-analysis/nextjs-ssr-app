@@ -10,9 +10,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Pretraga proizvoda | eProdavnica",
-  description:
-    "Pretraži proizvode po nazivu, kategoriji, brendu i opsegu cene.",
-  robots: { index: false, follow: true }
+  description: "Pretraži proizvode po nazivu, kategoriji, brendu i opsegu cene."
 };
 
 type Props = {
